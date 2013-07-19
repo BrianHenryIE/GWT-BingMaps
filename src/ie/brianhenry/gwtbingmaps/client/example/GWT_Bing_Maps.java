@@ -1,13 +1,13 @@
 package ie.brianhenry.gwtbingmaps.client.example;
 
-import ie.brianhenry.gwtbingmaps.client.sdk.BingMap;
-import ie.brianhenry.gwtbingmaps.client.sdk.Infobox;
-import ie.brianhenry.gwtbingmaps.client.sdk.InfoboxOptions;
-import ie.brianhenry.gwtbingmaps.client.sdk.Location;
-import ie.brianhenry.gwtbingmaps.client.sdk.MapOptions;
-import ie.brianhenry.gwtbingmaps.client.sdk.Pushpin;
-import ie.brianhenry.gwtbingmaps.client.sdk.PushpinOptions;
-import ie.brianhenry.gwtbingmaps.client.sdk.ViewOptions;
+import ie.brianhenry.gwtbingmaps.client.api.BingMap;
+import ie.brianhenry.gwtbingmaps.client.api.Infobox;
+import ie.brianhenry.gwtbingmaps.client.api.InfoboxOptions;
+import ie.brianhenry.gwtbingmaps.client.api.Location;
+import ie.brianhenry.gwtbingmaps.client.api.MapOptions;
+import ie.brianhenry.gwtbingmaps.client.api.Pushpin;
+import ie.brianhenry.gwtbingmaps.client.api.PushpinOptions;
+import ie.brianhenry.gwtbingmaps.client.api.ViewOptions;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.dom.client.Style.Position;
@@ -29,7 +29,7 @@ public class GWT_Bing_Maps implements EntryPoint {
 		
 		
 		// Set the ViewOptions
-	 	Location center = Location.getLocation(35.906849,-118.937988);
+	 	Location center = Location.newLocation(35.906849,-118.937988);
 	 	String mapTypeId = "fb";
 	 	int zoom = 5;
 	 	
@@ -46,7 +46,7 @@ public class GWT_Bing_Maps implements EntryPoint {
 		
 
 		// Add a pin to the map
-		Location location1 = Location.getLocation(38.906849,-120.937988);
+		Location location1 = Location.newLocation(38.906849,-120.937988);
 		
 		int pinWidth = 25;
 		int pinHeight = 28;
@@ -56,11 +56,11 @@ public class GWT_Bing_Maps implements EntryPoint {
 		PushpinOptions options = PushpinOptions.setPushPinOptions(pinWidth, pinHeight, icon, draggable, null, null, null);
 		Pushpin pushpin = Pushpin.getPushpin(location1, options);
 
-		map.getMap().addPinToMap(pushpin);
+		map.getMap().Entities().push(pushpin);
 		
 		
 		// Add an InfoBox to the map
-		Location location2 = Location.getLocation(33.606849,-115.2);
+		Location location2 = Location.newLocation(33.606849,-115.2);
 		
 		int infoWidth = 200;
 		int infoHeight = 75;
@@ -74,7 +74,7 @@ public class GWT_Bing_Maps implements EntryPoint {
 		InfoboxOptions infoboxOptions = InfoboxOptions.getInfoboxOptions(infoWidth, infoHeight, null, showCloseButton, zIndex, showPointer, visible, title, description, null);
 		Infobox infobox = Infobox.getInfobox(location2, infoboxOptions);
 
-		map.getMap().addInfoBoxToMap(infobox);
+		map.getMap().Entities().push(infobox);
 		
 	}
 }
