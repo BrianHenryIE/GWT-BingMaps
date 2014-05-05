@@ -18,7 +18,7 @@ To add a map to your application, create a BingMap object (a composite), giving 
 
     BingMap mapDiv = new BingMap("myMapName", mapOptions, viewOptions);
 
-E.g. in [SortonsEvents/DirectoryView.java](https://github.com/BrianHenryIE/Sortons-Events/blob/master/src/ie/sortons/events/client/view/DirectoryView.java) and [FriendsEvents/EventsMap.java](https://github.com/BrianHenryIE/Friends--Events/tree/master/src/ie/sortons/friendsevents/client/widgets).
+E.g. in [SortonsEvents/DirectoryView.java](https://github.com/BrianHenryIE/Sortons-Events/blob/master/src/ie/sortons/events/client/view/DirectoryView.java) and [FriendsEvents/EventsMap.java](https://github.com/BrianHenryIE/Friends--Events/blob/master/src/ie/sortons/friendsevents/client/widgets/EventsMap.java).
 Overview
 ----
 
