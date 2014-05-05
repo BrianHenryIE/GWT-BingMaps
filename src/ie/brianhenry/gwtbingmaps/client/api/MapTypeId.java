@@ -36,4 +36,9 @@ public class MapTypeId {
 	 * The road map type is being used.
 	 */
 	public static String ROAD = "road";
+	
+	/**
+	 * The Facebook map type is being used.
+	 */
+	public static String FACEBOOK = "fb";
 }

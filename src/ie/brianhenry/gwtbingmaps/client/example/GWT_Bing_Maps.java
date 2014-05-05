@@ -1,6 +1,6 @@
 package ie.brianhenry.gwtbingmaps.client.example;
 
-import ie.brianhenry.gwtbingmaps.client.api.BingMap;
+import ie.brianhenry.gwtbingmaps.client.BingMap;
 import ie.brianhenry.gwtbingmaps.client.api.Infobox;
 import ie.brianhenry.gwtbingmaps.client.api.InfoboxOptions;
 import ie.brianhenry.gwtbingmaps.client.api.Location;
@@ -31,9 +31,9 @@ public class GWT_Bing_Maps implements EntryPoint {
 		// Set the ViewOptions
 	 	Location center = Location.newLocation(35.906849,-118.937988);
 	 	String mapTypeId = "fb";
-	 	int zoom = 5;
+	 	double zoom = 5;
 	 	
-		ViewOptions viewOptions = ViewOptions.getViewOptions(null, center, null, null, mapTypeId, null, zoom);
+		ViewOptions viewOptions = ViewOptions.newViewOptions(null, center, null, null, mapTypeId, null, zoom);
 		
 		
 		// Create and add the map

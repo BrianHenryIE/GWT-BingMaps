@@ -7,12 +7,12 @@ public class ViewOptions extends JavaScriptObject {
 	protected ViewOptions(){ }		
 	
 
-	public static ViewOptions getViewOptions(Boolean animate, Location center, Point centerOffset, Integer heading, String mapTypeId, Integer padding, Integer zoom){
-		return getViewOptions(String.valueOf(animate), center, centerOffset, String.valueOf(heading), mapTypeId, String.valueOf(padding), String.valueOf(zoom));
+	public static ViewOptions newViewOptions(Boolean animate, Location center, Point centerOffset, Integer heading, String mapTypeId, Integer padding, Double zoom){
+		return newViewOptions(String.valueOf(animate), center, centerOffset, String.valueOf(heading), mapTypeId, String.valueOf(padding), String.valueOf(zoom));
 	}
 	
 	
-	private static native ViewOptions getViewOptions(String animate, Location center, Point centerOffset, String heading, String mapTypeId, String padding, String zoom) /*-{
+	private static native ViewOptions newViewOptions(String animate, Location center, Point centerOffset, String heading, String mapTypeId, String padding, String zoom) /*-{
 		var viewOptions = {};
 		
 		// It was very difficult to pass the boolean in to here while also allowing it to be null 
