@@ -6,7 +6,7 @@ GwtBingMaps is a set of JSNI overlays for using the [Bing Maps AJAX Control, Ver
 Quickstart
 ----
 
-Downlad [GwtBingMaps.jar](http://www.sortons.ie/gwt/GwtBingMaps20140506.jar), add it to your /war/WEB_INF/lib folder, and add it to your build path.
+Downlad [GwtBingMaps.jar](http://www.sortons.ie/gwt/gwtbingmaps20140506.jar), add it to your /war/WEB_INF/lib folder, and add it to your build path.
 
 Then add the following to your myproject.gwt.xml:
 
