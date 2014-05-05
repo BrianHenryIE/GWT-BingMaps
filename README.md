@@ -6,13 +6,14 @@ GwtBingMaps is a set of JSNI overlays for using the [Bing Maps AJAX Control, Ver
 Quickstart
 ----
 
-Downlad [GwtBingMaps.jar](http://www.sortons.ie/gwt/GwtBingMaps140505.jar), add it to your /war/WEB_INF/lib folder, and add it to your build path.
+Downlad [GwtBingMaps.jar](http://www.sortons.ie/gwt/GwtBingMaps20140506.jar), add it to your /war/WEB_INF/lib folder, and add it to your build path.
 
 Then add the following to your myproject.gwt.xml:
 
     <inherits name="ie.brianhenry.gwtbingmaps.GwtBingMaps" />
     <script src='//ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&amp;s=1' /> 
   
+Get an API key from [Bing Maps Account Center](https://www.bingmapsportal.com/). 
   
 To add a map to your application, create a BingMap object (a composite), giving it a unique title and pass it MapOptions and ViewOptions.
 
