@@ -1,2 +1,0 @@
-# Module gwt_bing_maps
-# RPC service class, partial path of RPC policy file
