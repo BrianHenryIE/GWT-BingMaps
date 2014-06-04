@@ -29,9 +29,9 @@ It is incomplete -- I just needed it to put intuitive/familiar looking maps in F
 
 So far, this handles making the map, adding pins, adding  infoboxes and handling events. BingMaps is capable of a lot more!
 
-Some classes are just empty JavaScriptObject shells so references in other objects are ok. In some places, it was unclear an int or a double should be used.
+Some classes are just empty JavaScriptObject shells so references in other objects are ok. In some places, it was unclear if an int or a double should be used.
 Live Examples
 ----
-* Here is [a directory of Dublin theatres companies](https://www.facebook.com/DublinTheatre/app_361530767318220).
-* Here is [a map of events your friends have been invited to](https://apps.facebook.com/sortonsevents/). (Fb login)
+* Here is [a directory of Dublin theatre companies](https://www.facebook.com/DublinTheatre/app_361530767318220).
+* Here is [a map of events your friends have been invited to](https://apps.facebook.com/sortonsevents/). (requires Facebook login)
 
