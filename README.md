@@ -6,11 +6,11 @@ GwtBingMaps is a set of JSNI overlays for using the [Bing Maps AJAX Control, Ver
 Quickstart
 ----
 
-1. Downlad [GwtBingMaps.jar](http://www.sortons.ie/gwt/gwtbingmaps20140506.jar), add it to your /war/WEB_INF/lib folder, and add it to your build path.
+Downlad [GwtBingMaps.jar](http://www.sortons.ie/gwt/gwtbingmaps20140506.jar), add it to your /war/WEB_INF/lib folder, and add it to your build path.
 
-Or if you're using Maven
+Or if you're using Maven:
 
-1. Clone this repository into your workspace using
+Clone this repository into your workspace using
 
     git clone https://github.com/BrianHenryIE/GwtBingMaps.git
 
@@ -27,17 +27,17 @@ And add it to your pom.xml
 		<scope>provided</scope>
 	</dependency>
 
-2. Then add the following to your myproject.gwt.xml:
+Then add the following to your myproject.gwt.xml:
 
     <inherits name="ie.brianhenry.gwtbingmaps.GwtBingMaps" />
 
-3. Add this to your .html file:
+Add this to your .html file:
 
     <script src='//ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&amp;s=1'></script>
     
-4. Get an API key from [Bing Maps Account Center](https://www.bingmapsportal.com/). 
+Get an API key from [Bing Maps Account Center](https://www.bingmapsportal.com/). 
   
-5. To add a map to your application, create a BingMap object, giving it a unique title and pass it MapOptions and ViewOptions.
+To add a map to your application, create a BingMap object, giving it a unique title and pass it MapOptions and ViewOptions.
 
     BingMap mapDiv = new BingMap("myMapName", mapOptions, viewOptions);
 
