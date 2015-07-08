@@ -31,4 +31,5 @@ public class PushpinOptions extends JavaScriptObject {
 		return options;
 	}-*/;
 
+	
 }

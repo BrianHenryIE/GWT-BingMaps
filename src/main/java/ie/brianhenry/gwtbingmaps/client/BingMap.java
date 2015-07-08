@@ -180,7 +180,6 @@ public class BingMap extends Composite implements HasValueChangeHandlers<Locatio
 	/*
 	 * LocationRect changes when a user pans or zooms the map.
 	 */
-	@Override
 	public HandlerRegistration addValueChangeHandler(ValueChangeHandler<LocationRect> handler) {
 
 		Events.addHandler(getMap(), "viewchangeend", new AsyncCallback<JavaScriptObject>() {
